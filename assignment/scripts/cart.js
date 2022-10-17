@@ -15,7 +15,9 @@ console.log(basket);
 addItem('lemon');
 console.log(addItem('jackfruit'));
 console.log(basket);
+console.log(`Basket is ${basket}`);
 console.log('Adding apples (expect true)', addItem('apples'));
+console.log(`Basket is now ${basket}`);
 //end testing for addItem
 
 //start listItems
@@ -23,7 +25,7 @@ function listItems(basket){
     for (item of basket){
         console.log('Basket Item: ', item);
     }
-    return 'Those are all of the items'
+    return 'Those are all of the items';
     
 }
 console.log(listItems(basket));
@@ -35,7 +37,7 @@ function empty(basket){
     while (basket.length > 0) {
         basket.pop();
     }
-    return 'Basket Emptied'
+    return 'Basket Emptied';
 }
 console.log(empty(basket));
 console.log('Double check the basket array has nothing:', basket);
