@@ -28,4 +28,14 @@ function listItems(basket){
 }
 console.log(listItems(basket));
 //not sure why im getting an undefined after the list
-//nevermind have to do a return in the function
+//nevermind have to do a return in the function and proper syntax with brackets
+
+//empty function
+function empty(basket){
+    while (basket.length > 0) {
+        basket.pop();
+    }
+    return 'Basket Emptied'
+}
+console.log(empty(basket));
+console.log('Double check the basket array has nothing:', basket);
